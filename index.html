@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>이불 밖은 위험해</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<div id="map3">
+	<img src="flower.png" id="flo">
+	<img src="window.png" id="win">
+	<img src="sofa.png" id="sofa1">
+	<img src="sofa.png" id="sofa2">
+	<img src="desk.png" id="desk1">
+	<img src="desk.png" id="desk2">
+	<a href="#hall" id="outres">나가기</a>
+
+	<div class="textbox" id="talk1">
+		<p class="maintext">꽃이 예쁘게 피어있다.</p>
+	</div>
+	<div class="textbox" id="talk2">
+		<p class="maintext">다른 과 건물이 보인다.</p>
+	</div>
+	<div class="textbox" id="talk3">
+		<p class="maintext">편안해 보이는 소파다.</p>
+	</div>
+	<div class="textbox" id="talk4">
+		<p class="maintext">편안해 보이는 소파다.</p>
+	</div>
+	<div class="textbox" id="talk5">
+		<p class="maintext">넓은 책상이다.</p>
+	</div>
+
+</div>
+<script type="text/javascript">
+
+	var  astate = "off";
+	flo.onclick = function(){
+		if (astate == "off") {
+			talk1.style.display = "block";
+			astate = "on";
+			}else{ 
+				talk1.onclick = function(){
+					talk1.style.display = "none";
+				}
+			astate = "off";
+			};
+		}
+	var  bstate = "off";
+	win.onclick = function(){
+		if (bstate == "off") {
+			talk2.style.display = "block";
+			bstate = "on";
+			}else{ 
+			talk2.onclick = function(){
+					talk2.style.display = "none";
+				}
+			bstate = "off";
+			};
+		}
+	var  cstate = "off";
+	sofa1.onclick = function(){
+		if (cstate == "off") {
+			talk3.style.display = "block";
+			cstate = "on";
+			}else{ 
+			talk3.onclick = function(){
+					talk3.style.display = "none";
+				}
+			cstate = "off";
+			};
+		}
+	var  dstate = "off";
+	sofa2.onclick = function(){
+		if (dstate == "off") {
+			talk4.style.display = "block";
+			dstate = "on";
+			}else{ 
+			talk4.onclick = function(){
+					talk4.style.display = "none";
+				}
+			dstate = "off";
+			};
+		}
+
+	var  estate = "off";
+	desk1.onclick = function(){
+		if (estate == "off") {
+			talk5.style.display = "block";
+			estate = "on";
+			}else{ 
+			talk5.onclick = function(){
+					talk5.style.display = "none";
+				}
+			estate = "off";
+			};
+		}
+
+
+		
+</script>
+
+
+</body>
+</html>
